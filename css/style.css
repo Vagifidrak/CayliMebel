@@ -1,0 +1,463 @@
+@charset "UTF-8";
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body h1 {
+  color: #5B5B5B;
+}
+
+body .BtnLarg {
+  color: white;
+  background-color: #2A293E;
+}
+
+body .BtnLarg:hover {
+  color: #7661ec;
+}
+
+body #Header .Caylilogo a {
+  color: #5B5B5B;
+  text-decoration: none;
+}
+
+body #Header .Icon h4 #BasketShop {
+  display: none;
+  text-align: center;
+  padding-top: 20px;
+}
+
+body #Header .Icon h4 #BasketShop ul {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 100%;
+  background-color: rgba(147, 119, 247, 0.151);
+}
+
+body #Header .Icon h4 #BasketShop ul li {
+  width: 18em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  color: #2a258b;
+}
+
+body #Header .Icon h4 #BasketShop ul li button {
+  margin: 5px;
+}
+
+body #Header .Icon h4 #BasketShop ul li h6 {
+  padding-top: 15px;
+}
+
+body #Header .Icon h4 #BasketShop ul li h6 a {
+  color: #2A293E;
+  text-decoration: none;
+}
+
+body #Header .Icon h4 #BasketShop ul li .BaskPrice {
+  text-align: center;
+}
+
+body #Header .Icon h4 a {
+  font-size: 30px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: #2A293E;
+}
+
+body #Header .Icon h4:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+body #NavBarAll .navbar-nav .nav-item:hover {
+  background-color: #5B5B5B;
+  opacity: .9;
+  border-radius: 5px;
+}
+
+body #NavBarAll .navbar-nav .nav-item:hover .nav-link {
+  color: #fdfdfd;
+}
+
+body #slider {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+body #slider .SlidInfo {
+  z-index: 10;
+  padding: 100px;
+  text-align: center;
+  position: absolute;
+}
+
+body #slider .SlidInfo h1,
+body #slider .SlidInfo p {
+  color: #2A293E;
+  font-style: italic;
+}
+
+body #slider .SlidInfo h1 {
+  font-size: 70px;
+}
+
+body #slider .SlidInfo p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+}
+
+body #slider .SlidInfo a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+body #slider .SlidInfo .SlidIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #slider .SlidInfo .SlidIcon .SlidIconOne span a i {
+  margin-top: 30px;
+  color: #2A293E;
+  padding: 35px;
+  font-size: 10vh;
+  opacity: .3;
+}
+
+body #slider .SlidInfo .SlidIcon .SlidIconOne span a i:hover {
+  color: #fdfdfd;
+  opacity: 1;
+  -webkit-transition: .9s;
+  transition: .9s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+body #slider #btnLeft,
+body #slider #btnRight {
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #2A293E;
+  color: white;
+}
+
+body #slider #btnLeft {
+  left: 25px;
+}
+
+body #slider #btnRight {
+  right: 25px;
+}
+
+body #slider .InfoBtn {
+  background-color: #2A293E;
+  color: white;
+}
+
+body #slider .sliderItem {
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+body #slider .sliderItem.active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body #slider .sliderItem:nth-child(1) {
+  background: url(/Image/slider/sl.jpg) no-repeat center center/cover;
+}
+
+body #slider .sliderItem:nth-child(2) {
+  background: url(/Image/slider/sl2.jpg) no-repeat center center/cover;
+}
+
+body #slider .sliderItem:nth-child(3) {
+  background: url(/Image/slider/sl3.jpg) no-repeat center center/cover;
+}
+
+body #slider .sliderItem:nth-child(4) {
+  background: url(/Image/slider/sl4.jpg) no-repeat center center/cover;
+}
+
+body #slider .sliderItem:nth-child(5) {
+  background: url(/Image/slider/sl5.jpg) no-repeat center center/cover;
+}
+
+body #slider .sliderItem:nth-child(5) {
+  background: url(/Image/slider/sl6.jpg) no-repeat center center/cover;
+}
+
+body #slider .sliderItem:nth-child(5) {
+  background: url(/Image/slider/sl7.jpg) no-repeat center center/cover;
+}
+
+body .ModelAll .model {
+  background-image: url(/Image/parallax.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 210px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .ModelAll .model h1 {
+  color: white;
+  margin-top: 60px;
+  text-align: center;
+  height: 100%;
+}
+
+body #servicesAll {
+  background-color: #5B5B5B;
+  height: 200px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+body #servicesAll .Services {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+body #servicesAll .Services.Services:hover {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+}
+
+body #servicesAll .Services .IconServices {
+  font-size: 40px;
+  color: #5B5B5B;
+}
+
+body #servicesAll .Services .InfoServices {
+  color: #007370;
+}
+
+body #ProAll {
+  margin: 50px 0 50px 0;
+}
+
+body #ProAll h1 {
+  color: white;
+}
+
+body #ProAll .ProBox:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 13px 21px 15px -9px rgba(90, 180, 110, 0.75);
+  box-shadow: 13px 21px 15px -9px rgba(37, 37, 37, 0.75);
+}
+
+body #ProAll .ProBox .imgboxitem {
+  position: relative;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+body #ProAll .ProBox .ProInfo {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+body #ProAll .Reklam {
+  margin: 50px 0;
+  height: 200px;
+  background-color: #5B5B5B;
+}
+
+body #ProAll .Reklam h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+body #footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5em 0;
+  background-color: #5B5B5B;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #footer .Sirket p,
+body #footer .ServicesFooter p,
+body #footer .contact p {
+  margin-bottom: 0;
+}
+
+body #footer .Sirket p a,
+body #footer .ServicesFooter p a,
+body #footer .contact p a {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+body #SaleHeader {
+  height: 550px;
+}
+
+body #SaleHeader .SaleImg {
+  position: relative;
+}
+
+body #SaleHeader .SaleName {
+  position: absolute;
+  bottom: 3px;
+  left: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+body #SaleSection .part {
+  height: 150px;
+  width: 100%;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body #TrendPro {
+  background-color: #f4faf5;
+  color: #5B5B5B;
+}
+
+body #TrendPro a :hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+body #TrendPro a .PragmaImg {
+  border-radius: 10px;
+}
+
+body #TrendPro h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+body .BasketSection .item-box,
+body .BasketSection #BtnBask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .BasketSection .item-box {
+  background-color: #f7f7f7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+body .BasketSection #BtnBask {
+  color: #5B5B5B;
+  margin-bottom: 0;
+}
+
+body .BasketSection .BoxBasket,
+body .BasketSection .BasketOrder,
+body .BasketSection .Basketİnfo {
+  border: 1px solid #5B5B5B;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+body .BasketSection .BasketOrder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .BasketSection .Basketİnfo a {
+  text-decoration: none;
+  color: red;
+}
+
+body .Historically {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+body .Historically h1,
+body .Historically h2,
+body .Historically p {
+  color: #2A293E;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+body .Career h1 {
+  color: #2A293E;
+}
+/*# sourceMappingURL=style.css.map */

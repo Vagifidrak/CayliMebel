@@ -1,0 +1,554 @@
+// //-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-
+// VagifIbra.az       vaqa.ibrahim@gmial.com          (+994)55-321-00-07
+// //-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        color: #5B5B5B;
+    }
+
+    .BtnLarg {
+        color: white;
+        background-color: #2A293E;
+
+        &:hover {
+            color: rgb(118, 97, 236);
+        }
+    }
+
+    #Header {
+        .Caylilogo {
+            a {
+                color: #5B5B5B;
+                text-decoration: none;
+            }
+        }
+
+        .Icon {
+            h4 {
+                #BasketShop {
+                    //===========================================
+                    display: none; // Burda duzeldilmelidi sebet hazirdi. JS hisse qalir
+                    text-align: center; //===========================================
+                    padding-top: 20px;
+
+                    ul {
+                        border: 1px solid grey;
+                        border-radius: 5px;
+                        height: 100%;
+                        background-color: rgba(147, 119, 247, 0.151);
+
+                        li {
+                            width: 18em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            list-style: none;
+                            color: rgb(42, 37, 139);
+
+                            button {
+                                margin: 5px;
+                            }
+
+                            h6 {
+                                a {
+                                    color: #2A293E;
+                                    text-decoration: none;
+                                }
+
+                                padding-top: 15px;
+                            }
+
+                            .BaskPrice {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    font-size: 30px;
+                    transform: scale(.9);
+                    color: #2A293E;
+
+                }
+
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: 1s ease;
+                }
+
+
+            }
+
+
+        }
+    }
+
+
+    // ===========================================
+    // Navbar Start 
+    // ===========================================
+
+    #NavBarAll {
+
+        .navbar-nav {
+
+            .nav-item:hover {
+                background-color: #5B5B5B;
+                opacity: .9;
+                border-radius: 5px;
+
+                .nav-link {
+                    color: #fdfdfd;
+                }
+            }
+
+        }
+    }
+
+    // ===========================================
+    // slider start
+    // ===========================================
+    #slider {
+        position: relative;
+        height: 80vh;
+        overflow: hidden;
+        margin-top: 5vh;
+
+        .SlidInfo {
+            z-index: 10;
+            padding: 100px;
+            text-align: center;
+            position: absolute;
+
+            h1,
+            p {
+                color: #2A293E;
+                font-style: italic;
+
+            }
+
+            h1 {
+                font-size: 70px;
+            }
+
+            p {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 50px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 30px;
+                color: white;
+            }
+
+            .SlidIcon {
+                display: flex;
+                justify-content: space-between;
+
+                .SlidIconOne span a i {
+                    margin-top: 30px;
+                    color: #2A293E;
+                    padding: 35px;
+                    font-size: 10vh;
+                    opacity: .3;
+
+                    &:hover {
+                        color: #fdfdfd;
+                        opacity: 1;
+                        transition: .9s;
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+
+        // ===========================================
+        //button start
+        // ===========================================
+
+        #btnLeft,
+        #btnRight {
+            z-index: 20;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #2A293E;
+            color: white;
+        }
+
+        #btnLeft {
+            left: 25px;
+        }
+
+        #btnRight {
+            right: 25px;
+        }
+
+        .InfoBtn {
+            background-color: #2A293E;
+            color: white;
+        }
+
+        // ===========================================
+        //button end
+        // ===========================================
+
+
+        // ===========================================
+        // slider start  
+        // ===========================================
+
+        .sliderItem {
+            height: 80vh;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(3);
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+                left: 0;
+                transition: .5s;
+                transform: scale(1);
+            }
+
+            &:nth-child(1) {
+                background: url(/Image/slider/sl.jpg) no-repeat center center /cover;
+            }
+
+            &:nth-child(2) {
+                background: url(/Image/slider/sl2.jpg) no-repeat center center /cover;
+            }
+
+            &:nth-child(3) {
+                background: url(/Image/slider/sl3.jpg) no-repeat center center /cover;
+            }
+
+            &:nth-child(4) {
+                background: url(/Image/slider/sl4.jpg) no-repeat center center /cover;
+            }
+
+            &:nth-child(5) {
+                background: url(/Image/slider/sl5.jpg) no-repeat center center /cover;
+            }
+
+            &:nth-child(5) {
+                background: url(/Image/slider/sl6.jpg) no-repeat center center /cover;
+            }
+
+            &:nth-child(5) {
+                background: url(/Image/slider/sl7.jpg) no-repeat center center /cover;
+            }
+        }
+    }
+
+    // ===========================================
+    // slider end 
+    // ===========================================
+
+
+    // ===========================================
+    //  models start 
+    // ===========================================
+
+    .ModelAll {
+        .model {
+            background-image: url(/Image/parallax.jpg);
+            background-attachment: fixed;
+            background-position: bottom;
+            height: 210px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h1 {
+                color: white;
+                margin-top: 60px;
+                text-align: center;
+                height: 100%;
+            }
+        }
+    }
+
+    // ===========================================
+    //  models end  
+    // ===========================================
+
+
+    // ===========================================
+    // services start 
+    // ===========================================
+
+    #servicesAll {
+        background-color: #5B5B5B;
+        height: 200px;
+        text-align: center;
+        margin: 50px 0;
+
+        .Services {
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+
+            &.Services:hover {
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+            }
+
+            .IconServices {
+                font-size: 40px;
+                color: #5B5B5B;
+            }
+
+            .InfoServices {
+                color: #007370;
+            }
+        }
+
+
+    }
+
+    // ===========================================
+    // services end 
+    // ===========================================
+
+    // ===========================================
+    // Products Start 
+    // ===========================================
+
+
+    #ProAll {
+        margin: 50px 0 50px 0;
+
+        h1 {
+            color: white;
+        }
+
+        .ProBox {
+
+            &:hover {
+                transition: all .2s ease-in-out;
+                transform: scale(.9);
+                -webkit-box-shadow: 13px 21px 15px -9px rgba(90, 180, 110, 0.75);
+                -moz-box-shadow: 13px 21px 15px -9px rgba(107, 138, 115, 0.75);
+                box-shadow: 13px 21px 15px -9px rgba(37, 37, 37, 0.75);
+            }
+
+            .imgboxitem {
+                position: relative;
+                border-radius: 5px;
+                background-size: cover;
+            }
+
+            .ProInfo {
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+            }
+        }
+
+        .Reklam {
+            margin: 50px 0;
+            height: 200px;
+            background-color: #5B5B5B;
+
+            h1 {
+                text-align: center;
+                padding: 30px;
+            }
+        }
+    }
+
+    // ===========================================
+    // Products End 
+    // ===========================================
+
+    #footer {
+        flex: 1;
+        padding: 5em 0;
+        background-color: #5B5B5B;
+        color: white;
+        align-items: center;
+
+        .Sirket,
+        .ServicesFooter,
+        .contact {
+            p {
+                margin-bottom: 0;
+
+                a {
+                    cursor: pointer;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    // ===========================================
+    // Sale Header Section Start 
+    // ===========================================
+
+
+    #SaleHeader {
+        height: 550px;
+
+        .SaleImg {
+            position: relative;
+        }
+
+        .SaleName {
+            position: absolute;
+            bottom: 3px;
+            left: 30px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    // ===========================================
+    // Sale  Header Section End 
+    // ===========================================
+
+
+
+
+    // ===========================================
+    // Sale Section Start  
+    // ===========================================
+
+    #SaleSection {
+
+        .part {
+            height: 150px;
+            width: 100%;
+            padding-bottom: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+
+    #TrendPro {
+        background-color: #f4faf5;
+        color: #5B5B5B;
+
+        a {
+            :hover {
+                transform: scale(1.3);
+                transition: .8s;
+            }
+
+
+            .PragmaImg {
+
+                border-radius: 10px;
+            }
+        }
+
+        h6 {
+            padding-top: 10px;
+            text-align: center;
+        }
+    }
+
+    .BasketSection {
+
+        .item-box,
+        #BtnBask {
+            display: flex;
+            align-items: center;
+        }
+
+        .item-box {
+            background-color: #f7f7f7;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        #BtnBask {
+            color: #5B5B5B;
+            margin-bottom: 0;
+        }
+
+        .BoxBasket,
+        .BasketOrder,
+        .Basketİnfo {
+            border: 1px solid #5B5B5B;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .BasketOrder {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Basketİnfo {
+            a {
+                text-decoration: none;
+                color: rgb(255, 0, 0);
+            }
+        }
+    }
+
+    // ===========================================
+    // Basket Shop Start
+    // ===========================================
+
+
+
+    // ===========================================
+    // Basket Shop End 
+    // ===========================================
+
+    // ===========================================
+    // Historically Start
+    // ===========================================
+
+
+    .Historically {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        h1,
+        h2,
+        p {
+            color: #2A293E;
+            padding-bottom: 10px;
+            text-align: justify;
+        }
+
+    }
+
+    .Career {
+        h1 {
+            color: #2A293E;
+        }
+    }
+
+
+    // ===========================================
+    // Historically End 
+    // ===========================================
+
+}
+
+// ===========================================
+// Sale Section End
+// ===========================================
